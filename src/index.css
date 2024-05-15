@@ -1344,6 +1344,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .main-left {
         position: fixed;
         left: -300px;
+        top: 83px;
         transition: all .1s;
         z-index: 1000;
     }

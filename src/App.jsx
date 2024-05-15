@@ -55,6 +55,7 @@ export default function App() {
         let { error } = await supabase.auth.signOut();
 
         setUser(null)
+        setOpenMobileMenu(false)
 
     }
 
@@ -140,7 +141,7 @@ export default function App() {
 
                 <div className="container">
 
-                    <div style={openMobileMenu === true ? {left: '16px'} : {}} className="main-left">
+                    <div style={openMobileMenu === true ? {left: '8px'} : {}} className="main-left">
 
                         {openMobileMenu === true &&
                         <>
