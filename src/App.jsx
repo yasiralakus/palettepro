@@ -145,11 +145,12 @@ export default function App() {
                         {openMobileMenu === true &&
                         <>
                             <NavLink to={'/'}>Anasayfa</NavLink>
-                            <NavLink to={'/followings'}>Takip Edilenler</NavLink>
-                            <NavLink to={'/create-palette'}>Palet Oluştur</NavLink>
-                            <NavLink to={'/bookmarks'}>Yıldızlananlar</NavLink>
-                            <NavLink to={`/profile/${user?.username}`}>Profil</NavLink>
-                            <button onClick={handleLogout}>Çıkış Yap</button>
+                            {user && <NavLink to={'/followings'}>Takip Edilenler</NavLink>}
+                            {user && <NavLink to={'/create-palette'}>Palet Oluştur</NavLink>}
+                            {user && <NavLink to={'/bookmarks'}>Yıldızlananlar</NavLink>}
+                            {user && <NavLink to={`/profile/${user?.username}`}>Profil</NavLink>}
+                            {user && <button onClick={handleLogout}>Çıkış Yap</button>}
+                            
                         </>
                         }
 

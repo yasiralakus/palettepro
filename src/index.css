@@ -1442,11 +1442,99 @@ p, h1, h2, h3, h4, h5, h6 {
         > button {
             font-size: 16px;
         }
+        > button:nth-child(1):hover {
+            background-color: #f5f5f5;
+            color: #a4a8ac;
+        }
+        > button:nth-child(2):hover {
+            background-color: #f5f5f5;
+            color: #a4a8ac;
+        }
+        > button:nth-child(3):hover {
+            background-color: #f5f5f5;
+            color: #a4a8ac;
+        }
+    }
+
+    .profile-biography {
+        padding: 16px;
+        gap: 10px;
+        > p {
+            font-size: 14px;
+        }
     }
 
     .post-page-post-comments {
         > h1 {
             font-size: 20px;
+        }
+    }
+
+    .make-suggestion-page{
+        padding: 16px;
+    }
+
+    .other-projects-page {
+        padding: 16px;
+    }
+
+    .create-page {
+        > form {
+            padding: 16px;
+        }
+    }
+
+    .following-details-page, .follower-details-page {
+        padding: 16px;
+        > header {
+            > a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .follow-details-user-box {
+        > img {
+            width: 50px;
+            height: 50px;
+        }
+        > div {
+            > h3 {
+                font-size: 16px;
+            }
+            > p {
+                font-size: 13px;
+            }
+
+        }
+    }
+
+    .edit-profile-page {
+        padding: 16px;
+    }
+
+    .statistics-page {
+        padding: 16px;
+        > h1 {
+            font-size: 20px;
+        }
+        > div {
+            > h3 {
+                font-size: 18px;
+            }
+            > h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .about-page {
+        padding: 16px;
+        > p {
+            font-size: 14px;
+        }
+        > h3 {
+            font-size: 18px;
         }
     }
 
